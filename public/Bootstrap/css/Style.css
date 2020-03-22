@@ -1,0 +1,344 @@
+html, body{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*MOBILE VIEW STYLE*/
+header{
+  padding: 10px 10px;
+  background-color: #FFFFFF;
+}
+
+.top-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header img:nth-child(1){
+  width: 12%;
+}
+
+header img:nth-child(2){
+  width: 60%;
+}
+
+#topmostButton{
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+#topmostButton:hover{
+  border: 1px solid blue !important;
+}
+
+#landingPage{
+  /*display: flex;
+  justify-content: center;*/
+  padding-top: 15px;
+  background-color: #B8D3E6;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#landingPage h1{
+  font-size: 2em;
+  font-weight: 10px;
+}
+
+#landingPage #first{
+  margin: 20% 0%;
+  padding: 2em;
+  text-align: center;
+}
+
+#landingPage #second{
+  display: none;
+}
+
+#belowLandingPage{
+  padding: 10px;
+  background-color: #EEEEFF;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #B8D3E6;
+}
+
+#main .card{
+  margin-bottom: 20px;
+}
+
+#main .btn{
+  width: 80%;
+  border: 1px solid #0000FF !important;
+}
+
+.list ul{
+  list-style-type: none;
+}
+
+.list ul li{
+  line-height: 2em;
+}
+
+.list-lg{
+  display: none;
+}
+
+.list-sm{
+  display: block;
+}
+
+#bottomMain{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#bottomMain .container{
+  width: 80%;
+}
+
+#bottomMain .imgTextDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#bottomMain img{
+  width: 20%;
+  opacity: 0.8;
+}
+
+
+#bottomMain h4{
+  font-size: 1.5em;
+}
+
+#bottomMain .row{
+  margin-top: 50px;
+}
+
+
+#bottomMain h3{
+  font-size: 1em;
+  margin-top: 50px;
+}
+
+/*AREA for MORE*/
+#DBAttributes{
+  padding: 40px 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#FAQsSection{
+  font-size: 1em;
+}
+
+#FAQsSection .card-header, #FAQsSection .card-body{
+  color: rgba(0, 0, 0, 0.8) !important;
+  background-color: #EEEEFF !important;
+}
+
+#FAQsSection h3{
+  margin: 100px;
+  font-size: 2em;
+}
+
+#FAQsSection a{
+  font-size: 0.8em;
+}
+
+footer #topFooter{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 75px 0px;
+  margin-top: 75px;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+footer #topFooter h3{
+  font-size: 1.5em;
+}
+
+footer #mainFooter{
+  margin-top: 50px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#FAQsSection a, #FAQsSection a:hover, #FAQsSection a:active, #FAQsSection a:visited, #FAQsSection a:focus{
+  text-decoration: none;
+}
+
+#bottomFooter{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#bottomFooter .main{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+#bottomFooter .main .footer-icons{
+  font-size: 1.5em;
+}
+
+#bottomFooter .container{
+  margin-top: 5em !important;
+}
+
+/*LAPTOP VIEW STYLE*/
+@media only screen and (min-width: 768px){
+
+  header{
+    background-color: transparent;
+  }
+
+  /*CLASSES FOR SCROLL EVENT*/
+  .scrolled-true{
+    background-color: #FFFFFF !important;
+  }
+
+  .scrolled-false{
+    background-color: transparent !important;
+  }
+
+  header img:nth-child(1){
+    width: 8%;
+    /*margin-left: -30%;*/
+  }
+
+  header img:nth-child(2){
+    width: 45%;
+  }
+
+  #landingPage h1{
+    font-size: 3em;
+    font-weight: 10px;
+  }
+
+  #landingPage #first{
+    margin: 0% 0%;
+    text-align: left;
+    display: block;
+    padding: 20% 0% 0% 25%;
+  }
+
+  #landingPage #first #drop{
+    font-size: 1.5em;
+  }
+
+  #landingPage #first .first-inner{
+    display: flex;
+  }
+
+  #landingPage #second{
+    display: block;
+  }
+
+  .list-lg{
+    display: block !important;
+  }
+
+  .list-lg-bordered{
+    padding-bottom: 30%;
+    border-width: 0px 1px 0px 1px;
+    border-color: lightgrey;
+    border-style: solid;
+
+  }
+
+  .list-sm{
+    display: none !important;
+  }
+
+  #bottomMain .container{
+  width: 50%;
+  }
+
+  #bottomMain .imgTextDiv{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #bottomMain img{
+    width: 30%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+
+
+  #bottomMain h4{
+    font-size: 2em;
+  }
+
+  #bottomMain .row{
+    margin-top: 50px;
+  }
+
+
+  #bottomMain h3{
+    font-size: 1.5em;
+    margin-top: 50px;
+  }
+
+  main .DBAttributes-col-1{
+    margin-left: -10%;
+  }
+
+  main .DBAttributes-img{
+    border-radius: 5px;
+    position: absolute;
+    padding: 1rem 6rem 1rem 0rem;
+    top: 4%;
+    left: 0%;
+  }
+
+ .DBAttributes-img-1{
+    background-color: red;
+    z-index: 1;
+  }
+
+  main .DBAttributes-col-2{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
+
+  main .DBAttributes-text h4{
+    margin: 1em 0em;
+    font-size: 2em;
+  }
+
+  main .DBAttributes-text p{
+    font-size: 1.2em;
+    font-weight: 5px;
+  }
+
+  main .DBAttributes-next{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  #bottomFooter .main{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    /*padding: 40px 0px;*/
+  }
+
+  #bottomFooter .main .footer-icons{
+    font-size: 1.5em;
+  }
+}
